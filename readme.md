@@ -8,7 +8,7 @@
 
 Достаточно интересная задача в контексте опенкарт, в дефолтной версии такого функционала нет и на просторах интернета я не нашел какого-то решения, поэтому хочется поделиться своим. 
 
-Оформил решение задачи в отдельный readme файл, в котором поэтапно с подробностями распишу какой код, куда и зачем, возможно кому-то пригодиться. Чуть позже планирую оформить в ocmod модификатор.
+Оформил решение задачи в отдельный readme файл, в котором постараюсь поэтапно с подробностями распишу какой код, куда и зачем, возможно кому-то пригодиться. Чуть позже планирую оформить в ocmod модификатор.
 
 Буду рад любой обратной связи. Мой [телеграм](https://t.me/leptyagin)
 
@@ -21,6 +21,6 @@ The task:
 
 Quite an interesting task in the context of opencart, there is no such functionality in the default version and I have not found any solution on the Internet, so I want to share my own solution.
 
-I've designed the solution to the problem in a separate readme file, in which I'll write in stages with details what code, where and why, it may be useful to someone. Later wanna make ocmod modification.
+I've designed the solution to the problem in a separate readme file, in which I'll try to write in stages with details what code, where and why, it may be useful to someone. Later wanna make ocmod modification.
 
 I'll be glad of any feedback. You can contact me in [telegram](https://t.me/leptyagin)
