@@ -1,26 +1,60 @@
-# Opencart 3: Список удаленных товаров на странице товара / List of deleted products on cart page
+# OpenCart 3: Soft Delete for Cart Items
 
-### English version down below
+## Overview
 
-### Цель
-Задача от клиента звучит так: 
-`Нужно на странице корзины вывести товары, которые удалили из корзины. То есть на странице корзины есть список добавленных в нее позиций. Если какой-то товар удаляем из списка, то товар переходит чуть ниже в список с кнопкой вернуть в корзину. Блоки должны работать ajax, без перезагрузки страницы.`  
+This repository provides a custom solution for implementing a **"soft delete"** feature for products in the cart page in OpenCart 3.
 
-Достаточно интересная задача в контексте опенкарт, в дефолтной версии такого функционала нет и на просторах интернета я не нашел какого-то решения, поэтому хочется поделиться своим. 
+### What problem does it solve?
 
-Оформил решение задачи в отдельный файл `solution-russian.md`, в котором постараюсь поэтапно с подробностями распишу какой код, куда и зачем, возможно кому-то пригодиться. Чуть позже планирую оформить в ocmod модификатор.
+By default, OpenCart removes products from the cart permanently when a user deletes them. This solution enhances the user experience by introducing a **temporary removal mechanism**:
 
-Буду рад любой обратной связи. Мой [телеграм](https://t.me/leptyagin)
+- When a user removes a product from the cart, it is **not deleted permanently**
+- Instead, it is moved to a separate "Removed Items" section below the cart
+- Each removed item includes a **"Restore" button** to add it back to the cart
+- All interactions work via **AJAX**, without page reloads
 
-## English version
+This behavior is similar to a "soft delete" pattern and is commonly used in modern e-commerce UX.
 
-### Description
+---
 
-The task:
-`It's necessary to display the products that were deleted on the cart page. That is, on the cart page there is a list of items added to it. If user delete a certain item from the list, then the product goes to the list below with the return to cart button. The blocks should work ajax, without reloading.`
+## Features
 
-Quite an interesting task in the context of opencart, there is no such functionality in the default version and I have not found any solution on the Internet, so I want to share my own solution.
+- Soft delete functionality for cart items
+- Restore removed products with one click
+- AJAX-based interactions (no page reloads)
+- Clean separation of active and removed items
+- Easy to integrate into existing OpenCart 3 projects
 
-I've designed the solution to the problem in a separate file `solution-english.md`, in which I'll try to write in stages with details what code, where and why, it may be useful to someone. Later wanna make ocmod modification.
+---
 
-I'll be glad of any feedback. You can contact me in [telegram](https://t.me/leptyagin)
+## Implementation
+
+The step-by-step implementation is described in: [solution.md](https://github.com/leptyagin/oc-removed-products-from-cart/blob/main/solution.md)
+
+In this file, you will find a detailed explanation of:
+- What changes are required
+- Where to apply them
+- Why each step is necessary
+
+---
+
+## Notes
+
+- This solution is designed specifically for **OpenCart 3**
+- It does not rely on third-party extensions
+- Can be later packaged as an **OCMOD modification** for easier reuse
+
+---
+
+## Feedback & Contact
+
+If you have suggestions, improvements, or questions — feel free to reach out:
+
+- LinkedIn: https://www.linkedin.com/in/leptyagin/
+- Telegram: https://t.me/leptyagin
+
+---
+
+## License
+
+This project is licensed under the MIT License.
